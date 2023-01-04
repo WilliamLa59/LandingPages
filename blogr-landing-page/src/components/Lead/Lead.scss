@@ -1,0 +1,53 @@
+@import "../Shared/Shared.scss";
+
+.lead-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.lead-header {
+  position: relative;
+  text-align: center;
+  top: 2rem;
+  color: $headingColour;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+}
+
+.lead-text-container {
+  width: 31rem;
+}
+
+.lead-img-container {
+  overflow-x: clip;
+  img {
+    position: relative;
+    transform: scale(1.2);
+    left: 8.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .grid-container{
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+  }
+
+  .lead-header{
+    top:0;
+    font-size: 20px;
+  }
+  .lead-img-container{
+    
+    img{
+      order: 1;
+    }
+  }
+
+  .lead-text-container{
+    order: 2;
+  }
+}
