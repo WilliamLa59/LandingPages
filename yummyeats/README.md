@@ -1,5 +1,4 @@
-# website 1
-
+# yummy.eats
 created following a frontend developer crash course as a refresher for html and css
 
 optimized for both mobile and desktop(all aspect ratios) use  
